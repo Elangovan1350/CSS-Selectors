@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors-in-css</title>
+
+    <style>
+        body{
+            background-color: rgb(241, 235, 227);
+        }
+      /* universe selectors */
+      * {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      /* element type or tag selectors */
+      h1 {
+        color: rgb(238, 40, 40);
+      }
+
+      /* class selectors */
+
+      .pselect {
+        color: brown;
+      }
+
+      /* id selectors */
+      #idselect {
+        color: rgb(48, 30, 210);
+      }
+
+      /*child selectors  */
+
+      div > section > h1 {
+        color: darkorchid;
+      }
+
+      /* attribute selector */
+      /* [attribute-name="value"] */
+      h3[id="h3tags"] {
+        color: indigo;
+      }
+
+      /* desendent selectors */
+      div section h1 {
+        background-color: chocolate;
+      }
+      div section h3 {
+        background-color: deepskyblue;
+      }
+
+      /* general sibling selectors */
+      header ~ p {
+        color: greenyellow;
+      }
+      /* adjesend sibling selector */
+      footer+h2{
+        color: mediumvioletred;
+      }
+
+      /* group selector */
+      h3,h4,h5{
+        color: darkseagreen;
+      }
+    </style>
+  </head>
+  <body >
+    <!-- element type or tag selectors -->
+    <h1>CSS Selectors</h1>
+
+    <!-- class selectors -->
+    <p class="pselect">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio cumque
+      provident quae consequuntur aliquid dolorem nostrum non illum quis error.
+    </p>
+
+    <!-- id selectors -->
+    <p id="idselect">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+      reprehenderit, corporis cumque laudantium dolore omnis nam atque minus
+      numquam adipisci.
+    </p>
+    <!-- child selectors -->
+    <div>
+      <h1>Lorem, ipsum dolor.</h1>
+      <section>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      </section>
+    </div>
+    <!-- attribute selector -->
+    <h3 id="h3tags">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </h3>
+    <h3>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sunt!
+    </h3>
+    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt.</h3>
+
+    <!-- desendent selector -->
+
+    <h1>Elangovan</h1>
+    <div>
+      <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+      <section>
+        <h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+          aliquam!
+        </h3>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+      </section>
+    </div>
+
+    <header>
+      <h1>Lorem ipsum dolor, sit amet consectetur adipisicing.</h1>
+    </header>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <h4>Lorem ipsum dolor sit amet.</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eius.
+    </p>
+    <section>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem ex nemo
+        iure commodi sunt aliquid, fugit nihil nisi, sequi pariatur fugiat,
+        provident laudantium. Iure quibusdam velit esse numquam. Saepe, modi.
+      </p>
+    </section>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    <!-- adjesend sibling selector -->
+
+    <footer>
+        <h2>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, iure.
+        </h2>
+    </footer>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas perferendis voluptates nostrum.</p>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quaerat reiciendis eaque!</h2>
+    <footer>
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, ducimus dolor!</h2>
+    </footer>
+    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat quam inventore asperiores iure!</h2>
+
+    <!-- grouping selectors -->
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laborum aliquid maxime assumenda nostrum!</h3>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, ut!</h4>
+    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae enim deleniti quae, vitae fugiat sint!</h5>
+
+    
+  </body>
+</html>
